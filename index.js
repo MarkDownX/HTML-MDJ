@@ -33,7 +33,7 @@ function html2mdj(html) {
          if(thisLineOpen.length > 0){
            thisLineOpen.pop()
          };
-        if(thisLineOpen.length > 0){
+        if(thisLineTag !== name){
           thisLine.push({name: name, isClosing: true});
         }else{
           isInLine = false;
