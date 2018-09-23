@@ -34,7 +34,7 @@ function html2mdj(html) {
            thisLineOpen.pop()
          };
         if(thisLineTag !== name){
-          thisLine.push({name: name, isClosing: true});
+          thisLine.push({tag: name, isClosing: true});
         }else{
           isInLine = false;
           lines[lines.length - 1].content = thisLine;
